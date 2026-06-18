@@ -12,6 +12,16 @@ windowed UI and the **Spectacles Fetch API** for networking.
 > / scene is created in Lens Studio 5 and is intentionally not committed. Search
 > markers: `TODO(spectacles)`.
 
+## Companion-link contract
+
+Capture/relay follows the vendor-neutral
+[`glass-link.ts`](https://github.com/maceip/ambient-link-core/blob/main/contracts/glass-link.ts)
+contract — full routing/perf plan in
+[ambient-link-core/ROUTING.md](https://github.com/maceip/ambient-link-core/blob/main/ROUTING.md),
+extracted from the recovered Cosmo teardown. Implemented here as
+`Assets/Scripts/GlassLink.ts`. Perf rules to honor: idempotent `bind()`,
+1-frame/10s throttle, TTL ephemeral buffer.
+
 ## How Spectacles Lenses display content
 
 - Build in **Lens Studio 5** (https://ar.snap.com/lens-studio); scripts are TypeScript.
