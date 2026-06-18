@@ -1,0 +1,9 @@
+# Lens Studio
+Cache/
+Logs/
+*.lsproj.lock
+.DS_Store
+
+# Lens Studio compiles TS -> JS next to sources; keep TS as source of truth.
+Assets/Scripts/**/*.js
+Assets/Scripts/**/*.js.map
